@@ -4,7 +4,7 @@ Personal portfolio written in VueJS
 
 ## Demo
 
-You can view a live demo [here](https://alaborde.software/).
+You can view a live demo [here](https://alaborde.me/).
 
 ## License
 
