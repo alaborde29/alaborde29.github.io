@@ -5,12 +5,15 @@
   "scripts": {
     "lint": "npx eslint --cache-location \".cache/eslint/.eslintcache\" --ext \".js,.vue\" .",
     "static": "python3 -m 'http.server' -d dist/ 8000",
-    "deploy": "npx gh-pages -d dist/ -b static",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "fmt": "npx prettier --write --check .",
     "gen": "npx nuxt generate",
     "start": "npx nuxt start",
     "build": "npx nuxt build",
-    "dev": "npx nuxt dev"
+    "dev": "npx nuxt dev",
+    "generate": "nuxt generate",
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
@@ -33,6 +36,7 @@
     "@nuxtjs/eslint-config": "^8.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/svg": "^0.4.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.10.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-nuxt": "^3.1.0",
@@ -44,6 +48,7 @@
     "nuxt-helmet": "3.0.0",
     "postcss-logical": "^5.0.4",
     "prettier": "^2.5.1",
+    "push-dir": "^0.4.1",
     "raw-loader": "^4.0.2",
     "sass": "^1.49.9",
     "sass-loader": "10"
