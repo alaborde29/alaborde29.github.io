@@ -64,19 +64,15 @@ export default {
             socialLinks: [
                 {
                     label: 'linktree',
-                    href: 'https://linktr.ee/fxrysh'
+                    href: 'https://linktr.ee/alaborde29'
                 },
                 {
                     label: 'github',
-                    href: 'https://github.com/fxrysh'
-                },
-                {
-                    label: 'twitter',
-                    href: 'https://twitter.com/fxrysh'
+                    href: 'https://github.com/alaborde29'
                 },
                 {
                     label: 'email',
-                    href: 'mailto:hello@farish.is-a.dev'
+                    href: 'mailto:laborde.a@live.fr'
                 }
             ]
         };

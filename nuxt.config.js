@@ -1,17 +1,9 @@
 import 'dotenv/config';
 
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-    router: {
-      base: '/<nom-du-depot>/'
-    }
-  } : {}
-  
-
 export default {
     components: true,
     target: 'static',
-    ...routerBase,
-    
+
     head: {
         htmlAttrs: { lang: 'en', dir: 'ltr' },
         title: 'Alexandre Laborde | Portfolio',
@@ -29,7 +21,7 @@ export default {
     },
 
     router: {
-        base: '/alaborde29.github.io/'
+        base: '/home/'
     },
 
     server: {
