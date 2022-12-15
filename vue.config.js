@@ -1,1 +1,7 @@
-module.exports = {  publicPath: process.env.NODE_ENV === "production" ? "/alaborde29.github.io/" : "/",};
+export default {
+    target: 'static',
+    router: {
+        base: '/alaborde29.github.io/'
+    }
+}
+  
